@@ -8,6 +8,8 @@ ROWS=1000000 BATCH_SIZE=10000 PGUSER=yourusername PGPASSWORD=yourpassword PGDATA
 
 You can also add `DEBUG=1` to see batch-by-batch output.
 
+Your user must have CREATE TABLE privileges.
+
 Sample output:
 
 ```

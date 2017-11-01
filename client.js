@@ -32,7 +32,14 @@ c.connect().catch((e) => {
   process.exit();
 }).then(() => {
   DEBUG && console.log('Connected');
+  return c.query('CREATE TABLE IF NOT EXISTS testtable (id int)');
+}).then(() => {
   return insert();
+}).catch((e) => {
+  console.error('Some query failed:');
+  console.error(e);
+  c.end();
+  process.exit();
 }).then(() => {
   const time = Date.now() - startTime;
   console.log(`Inserted ${ROWS} with batch size ${BATCH_SIZE} ${time}ms at ${time / ROWS}ms per row.`);
