@@ -1,0 +1,23 @@
+{
+  "name": "pg-throughput-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "dependencies": {
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cairo140/pg-throughput-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cairo140/pg-throughput-test/issues"
+  },
+  "homepage": "https://github.com/cairo140/pg-throughput-test#readme"
+}
